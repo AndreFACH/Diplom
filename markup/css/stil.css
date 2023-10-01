@@ -483,6 +483,7 @@ header #checkbox-toggle:checked ~ .hamburger .hamburger-line::after {
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+    z-index: 99;
   }
   header .d-flex-header img {
     width: 77.5px;
@@ -574,11 +575,46 @@ header #checkbox-toggle:checked ~ .hamburger .hamburger-line::after {
   width: 100%;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 998px) {
   .container {
     padding: 0 60px;
   }
 }
-* {
-  background: #323264;
+.color-section_h .hhh {
+  display: flex;
+  position: relative;
+  z-index: 99;
+  margin-top: -80px;
+  opacity: 0.5;
+}
+
+.hiro-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+}
+
+.c-scroll {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 50%;
+  line-height: 30px;
+  top: 100%;
+}
+.c-scroll a {
+  color: black;
+  text-decoration: none;
+}
+
+.wraper-sec {
+  display: grid;
+  gap: 20px;
+  justify-content: space-between;
+}
+.wraper-sec .card-sec {
+  display: block;
+  flex-wrap: wrap;
 }/*# sourceMappingURL=stil.css.map */

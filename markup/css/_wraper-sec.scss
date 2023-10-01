@@ -1,0 +1,10 @@
+.wraper-sec {
+    display: grid;
+    gap: 20px;
+    justify-content: space-between;
+
+    .card-sec {
+        display: block;
+        flex-wrap: wrap;
+    }
+}

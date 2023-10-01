@@ -1,0 +1,22 @@
+.hiro-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+}
+
+.c-scroll {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 50%;
+    line-height: 30px;
+    top: 100%;
+
+
+    & a {
+        color: black;
+        text-decoration: none;
+    }
+}
