@@ -463,6 +463,11 @@ header #checkbox-toggle:checked ~ .hamburger .hamburger-line::before {
 header #checkbox-toggle:checked ~ .hamburger .hamburger-line::after {
   top: 0px;
 }
+@media (max-width: 768px) {
+  header .d-flex-header {
+    display: none;
+  }
+}
 @media (min-width: 768px) {
   header header {
     padding: 50px 60px 0px;
@@ -508,7 +513,7 @@ header #checkbox-toggle:checked ~ .hamburger .hamburger-line::after {
     background: #EDEDF7;
   }
   header .header-nav-links .btn-header:active {
-    background: #F0145A;
+    background: red;
   }
   header .header-nav-links a {
     font-size: 12px;
@@ -575,5 +580,5 @@ header #checkbox-toggle:checked ~ .hamburger .hamburger-line::after {
   }
 }
 * {
-  background: blue;
+  background: #323264;
 }/*# sourceMappingURL=stil.css.map */

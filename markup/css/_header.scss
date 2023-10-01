@@ -126,6 +126,12 @@ header {
       #checkbox-toggle:checked ~ .hamburger .hamburger-line::after {
         top: 0px;
       }
+
+      @media (max-width: 768px) {
+        .d-flex-header {
+          display: none;
+        }
+      }
       
       @media (min-width: 768px) {
         header {
@@ -172,7 +178,7 @@ header {
           background: #EDEDF7;
         }
         .header-nav-links .btn-header:active {
-          background: #F0145A;
+          background: red;
         }
         .header-nav-links a {
           font-size: 12px;
