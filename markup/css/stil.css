@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *:before,
 *:after {
@@ -580,12 +581,39 @@ header #checkbox-toggle:checked ~ .hamburger .hamburger-line::after {
     padding: 0 60px;
   }
 }
-.color-section_h .hhh {
+.color-section {
   display: flex;
-  position: relative;
-  z-index: 99;
-  margin-top: -80px;
-  opacity: 0.5;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../markup/images/Symbol.png");
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.color-section_h {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.hiro {
+  text-align: center;
+  z-index: 1;
+}
+
+.hiro-text h1 {
+  font-size: 24px;
+}
+
+.c-scroll {
+  text-decoration: none;
+  color: #ffffff;
+  display: inline-block;
+  margin-top: 20px;
 }
 
 .hiro-text {
@@ -609,12 +637,93 @@ header #checkbox-toggle:checked ~ .hamburger .hamburger-line::after {
   text-decoration: none;
 }
 
-.wraper-sec {
+.grid {
   display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Три стовпці */
   gap: 20px;
-  justify-content: space-between;
 }
-.wraper-sec .card-sec {
-  display: block;
-  flex-wrap: wrap;
+
+.card-sec {
+  width: 100%;
+}
+
+a {
+  color: #24A3FF;
+  text-decoration: none;
+}
+
+p {
+  color: white;
+}
+
+.quote {
+  display: flex;
+  align-items: center; /* Вертикально центруємо фото та текст */
+}
+
+.quote-image img {
+  width: 400px; /* Фіксована ширина 400px */
+  height: 344px; /* Фіксована висота 344px */
+  border-radius: 12px 0 0 12px; /* Радіуси для лівого верхнього та нижнього кутів */
+  margin-right: 20px; /* Додатковий проміжок між фото та текстом */
+}
+
+.quote-content {
+  flex-grow: 1; /* Розтягуємо текст, щоб заповнити вільний простір */
+}
+
+.main-menu-skul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-menu-skul h3 {
+  text-align: center;
+  color: #323264;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.main-menu-skul-logo {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.card-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  justify-content: center;
+  background: #F5F5FA;
+}
+
+.card {
+  flex-basis: 440px;
+  height: 583px;
+  padding: 30px 60px 0 60px;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px 8px 0 0;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.dotted {
+  display: flex;
+  justify-content: left;
+  width: 100%;
+}
+
+* {
+  background: #323264;
 }/*# sourceMappingURL=stil.css.map */

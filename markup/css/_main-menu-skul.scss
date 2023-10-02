@@ -1,0 +1,19 @@
+.main-menu-skul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-menu-skul h3 {
+    text-align: center;
+    color: #323264;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+
+}
+.main-menu-skul-logo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}

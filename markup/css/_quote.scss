@@ -1,0 +1,15 @@
+.quote {
+    display: flex;
+    align-items: center; 
+}
+
+.quote-image img {
+    width: 400px; 
+    height: 344px; 
+    border-radius: 12px 0 0 12px; 
+    margin-right: 20px; 
+}
+
+.quote-content {
+    flex-grow: 1; 
+}

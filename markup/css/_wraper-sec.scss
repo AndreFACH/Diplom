@@ -1,10 +1,18 @@
-.wraper-sec {
+.grid {
     display: grid;
-    gap: 20px;
-    justify-content: space-between;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+}
 
-    .card-sec {
-        display: block;
-        flex-wrap: wrap;
-    }
+.card-sec {
+    width: 100%; 
+}
+
+a {
+    color: #24A3FF;
+    text-decoration: none;
+}
+
+p {
+    color: white;
 }

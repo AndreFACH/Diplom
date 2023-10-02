@@ -1,11 +1,34 @@
-.color-section_h {
+.color-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../markup/images/Symbol.png');
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh; 
+}
 
-    .hhh {
-        display: flex;
-        position: relative;
-        z-index: 99;
-        margin-top: -80px;
-        opacity: 0.5;
-    }
-    
+.color-section_h {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8); 
+}
+
+.hiro {
+    text-align: center;
+    z-index: 1;
+}
+
+.hiro-text h1 {
+    font-size: 24px; 
+}
+
+.c-scroll {
+    text-decoration: none;
+    color: #ffffff; 
+    display: inline-block;
+    margin-top: 20px; 
 }
