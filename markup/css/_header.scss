@@ -1,5 +1,10 @@
-header {
+
+#header {
+    width: 100%;
     padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
 
     .flex-header-mob-1 {
         display: flex;

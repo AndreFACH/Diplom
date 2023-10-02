@@ -1,4 +1,6 @@
 @import './normal';
+@import './base';
+@import './wrapper';
 @import './header';
 @import './conteiner';
 @import './color-section_h';
@@ -9,6 +11,3 @@
 @import './card.grid';
 @import './heros';
 
-* {
-    background: #323264;
-}

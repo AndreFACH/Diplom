@@ -1,18 +1,35 @@
-.hiro-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
+.hiro {
+    width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    min-height: 100vh;
+    color: white;
+
+    .hiro-img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+}
+.hiro-text {
+    position: relative;
 }
 
 .c-scroll {
     position: absolute;
     display: flex;
     justify-content: center;
-    border: 1px solid black;
+    border: 1px solid white;
     border-radius: 50%;
     line-height: 30px;
-    top: 100%;
+    bottom: 50px;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    transform: translateX(-50%);
 
 
     & a {
