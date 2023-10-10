@@ -5,15 +5,20 @@
     justify-content: center;
     background: #F5F5FA;
 
+    & p {
+        color: black;
+    }
+
 }
 
 .card {
     flex-basis: 440px; 
     height: 583px; 
-    padding: 30px 60px 0 60px; 
     transition: transform 0.2s; 
-    cursor: pointer; 
-    
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 5px;
+   
 }
 
 .card img {

@@ -357,6 +357,10 @@ img {
   vertical-align: top;
 }
 
+.bagraund {
+  background: #F5F5FA;
+}
+
 #wrapper {
   width: 100%;
   overflow: hidden;
@@ -684,30 +688,47 @@ a {
   text-decoration: none;
 }
 
-p {
-  color: white;
-}
-
 .quote {
   display: flex;
   align-items: center;
+  background: #F5F5FA;
+  margin-top: 60px;
 }
 
-.quote-image img {
-  width: 400px;
-  height: 344px;
+.hhh {
+  width: 300px;
+  height: 250px;
   border-radius: 12px 0 0 12px;
   margin-right: 20px;
+}
+
+.quote.main-item {
+  display: flex;
+  align-items: flex-start;
 }
 
 .quote-content {
   flex-grow: 1;
 }
 
+.col p {
+  font-size: 38px;
+  line-height: 46px;
+  font-weight: 700;
+  color: linear-gradient(to right, rgb(240, 20, 90) 0%, rgb(125, 185, 232) 100%);
+}
+
+.positive-qualities-link-arrow p {
+  font-size: 12px;
+  line-height: 10px;
+  color: gray;
+}
+
 .main-menu-skul {
   display: flex;
   flex-direction: column;
   align-items: center;
+  transform: scale(1.02);
 }
 
 .main-menu-skul h3 {
@@ -731,13 +752,17 @@ p {
   justify-content: center;
   background: #F5F5FA;
 }
+.card-grid p {
+  color: black;
+}
 
 .card {
   flex-basis: 440px;
   height: 583px;
-  padding: 30px 60px 0 60px;
   transition: transform 0.2s;
   cursor: pointer;
+  border: 1px solid black;
+  border-radius: 5px;
 }
 
 .card img {
@@ -751,11 +776,84 @@ p {
 }
 
 @media (min-width: 992px) {
-  .hero-swiper {
+  .hold-padding-left-right hero-swiper {
     display: flex;
     align-items: center;
   }
 }
+
+.hero-swiper__item {
+  position: absolute;
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.hero-swiper__copy {
+  border-top: 4px solid rgba(255, 255, 255, 0.3);
+  padding: 30px 0;
+}
+@media (min-width: 768px) {
+  .hero-swiper__copy {
+    padding: 60px 0;
+  }
+}
+@media (min-width: 992px) {
+  .hero-swiper__copy {
+    width: 60%;
+    border-top: 0;
+    border-left: 4px solid rgba(255, 255, 255, 0.3);
+    padding: 0 0 0 8%;
+  }
+}
+.hero-swiper__copy h2 {
+  color: white;
+  font-size: 20px;
+}
+
+#consistent:checked ~ .hero-swiper_titles [for=consistent] {
+  color: red;
+}
+#consistent:checked ~ .hero-swiper__copy {
+  display: block;
+  opacity: 1;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+  transform: translateY(0);
+}
+
+#innovative:checked ~ .hero-swiper_titles [for=innovative] {
+  color: red;
+}
+#innovative:checked ~ .hero-swiper__copy {
+  display: block;
+  opacity: 1;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+  transform: translateY(0);
+}
+
+#business:checked ~ .hero-swiper_titles [for=business] {
+  color: red;
+}
+#business:checked ~ .hero-swiper__copy {
+  display: block;
+  opacity: 1;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+  transform: translateY(0);
+}
+
+#customer:checked ~ .hero-swiper_titles [for=customer] {
+  color: red;
+}
+#customer:checked ~ .hero-swiper__copy {
+  display: block;
+  opacity: 1;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+  transform: translateY(0);
+}
+
 .hero-swiper__title {
   display: flex;
   overflow: auto;
@@ -789,72 +887,6 @@ p {
   .hero-swiper__title label {
     text-wrap: wrap;
   }
-}
-.hero-swiper__item {
-  position: absolute;
-  opacity: 0;
-  transform: translateY(50px);
-}
-.hero-swiper__copy {
-  border-top: 4px solid rgba(255, 255, 255, 0.3);
-  padding: 30px 0;
-}
-@media (min-width: 768px) {
-  .hero-swiper__copy {
-    padding: 60px 0;
-  }
-}
-@media (min-width: 992px) {
-  .hero-swiper__copy {
-    width: 60%;
-    border-top: 0;
-    border-left: 4px solid rgba(255, 255, 255, 0.3);
-    padding: 0 0 0 8%;
-  }
-}
-.hero-swiper__copy h2 {
-  color: white;
-  font-size: 20px;
-}
-.hero-swiper #consistent:checked ~ .hero-swiper_titles [for=consistent] {
-  color: red;
-}
-.hero-swiper #consistent:checked ~ .hero-swiper__copy {
-  display: block;
-  opacity: 1;
-  position: relative;
-  transition: all 0.5s ease-in-out;
-  transform: translateY(0);
-}
-.hero-swiper #customer:checked ~ .hero-swiper_titles [for=customer] {
-  color: red;
-}
-.hero-swiper #customer:checked ~ .hero-swiper__copy {
-  display: block;
-  opacity: 1;
-  position: relative;
-  transition: all 0.5s ease-in-out;
-  transform: translateY(0);
-}
-.hero-swiper #innovative:checked ~ .hero-swiper_titles [for=innovative] {
-  color: red;
-}
-.hero-swiper #innovative:checked ~ .hero-swiper__copy {
-  display: block;
-  opacity: 1;
-  position: relative;
-  transition: all 0.5s ease-in-out;
-  transform: translateY(0);
-}
-.hero-swiper #business:checked ~ .hero-swiper_titles [for=business] {
-  color: red;
-}
-.hero-swiper #business:checked ~ .hero-swiper__copy {
-  display: block;
-  opacity: 1;
-  position: relative;
-  transition: all 0.5s ease-in-out;
-  transform: translateY(0);
 }
 
 .dotted .text {
